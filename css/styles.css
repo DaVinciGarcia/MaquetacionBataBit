@@ -262,3 +262,80 @@ main{
 	color: var(--warm-black);
 }
 
+/* 
+    Pequeña convencion para llevar un mayor orden en los estilos
+    1.- Posicionamiento --> static, absolute, relative, fixed
+    2.- Modelo de caja (Box model) --> margin, border, padding, content
+    3.- Tipografía --> tipos, tamaños de fuente, etc
+    4.- Estilos visuales --> box-shadow, border-radius, gradient, etc
+    5.- Otros --> reglas CSS y más
+*/
+
+.benefits-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-width: 320px;
+	height: auto;
+	text-align: center;
+	background-color: var(--warm-black);
+}
+
+.benefits-container .benefits-container__peanut-icon{
+	display: inline-block;
+	position: relative;
+	top: -12px;
+	width: 38px;
+	height: 24px;
+	margin: 0 auto;
+	background-image: url("../assets/icons/batata.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.benefits-container .benefits-container__precards{
+	width: 90%;
+	min-width: 288px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+
+.benefits-container .benefits-container__title{
+	margin-top: 30px;
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+	color: var(--just-white)
+}
+
+.benefits-container .benefits-container__info{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	color: grey;
+}
+
+.benefits-container .benefits-container__card{
+	width: 90%;
+	min-width: 288px;
+	max-width: 500px;
+	height: auto;
+	padding: 0 7px;
+	margin: 12px auto;
+	background-color: var(--warm-blackplus1);
+
+}
+
+.benefits-container__card .benefits-container__title--small{
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+}
+
+
