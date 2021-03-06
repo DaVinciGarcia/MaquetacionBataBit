@@ -37,6 +37,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 
 header{
@@ -142,7 +143,7 @@ main{
 	margin: 0 auto;
 }
 
-.main-exchange-container__text-container h2{
+.main-exchange-container__text-container h2, .plans-container__text .plans-container__title{
 	margin-bottom: 30px;
 	font-weight: bold;
 	font-size: 2.4rem;
@@ -150,7 +151,7 @@ main{
 	color: var(--warm-black);
 }
 
-.main-exchange-container__text-container p{
+.main-exchange-container__text-container p, .plans-container__text .plans-container__info, .plans-container .plans-container__card-info {
 	font-weight: 500;
 	font-size: 1.4rem;
 	line-height: 1.8rem;
@@ -277,6 +278,7 @@ main{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 0;
 	width: 100%;
 	min-width: 320px;
 	height: auto;
@@ -305,8 +307,8 @@ main{
 }
 
 
-.benefits-container .benefits-container__title{
-	margin-top: 30px;
+.benefits-container .benefits-container__title, .try-it-container__text{
+	margin-top: 26px;
 	font-weight: 700;
 	font-size: 2.4rem;
 	line-height: 2.6rem;
@@ -327,9 +329,11 @@ main{
 	min-width: 288px;
 	max-width: 500px;
 	height: auto;
-	padding: 0 7px;
+	padding: 10px 15px;
 	margin: 12px auto;
+	text-align: left;
 	background-color: var(--warm-blackplus1);
+
 
 }
 
@@ -338,4 +342,159 @@ main{
 	line-height: 1.8rem;
 }
 
+.benefits-container__card .benefits-container__icon{
+	position: relative;
+	left: 18px;
+	top: 16px;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
+.benefits-container__icon--clock{
+	background-image: url("../assets/icons/clock.svg");
+}
+
+.benefits-container__icon--eye{
+	background-image: url("../assets/icons/eye.svg");
+}
+
+.benefits-container__icon--money{
+	background-image: url("../assets/icons/dollar-sign.svg");
+}
+
+.benefits-container__icon--check{
+	background-image: url("../assets/icons/check-circle.svg");
+}
+
+.try-it-container{
+	width: 100%;
+	min-width: 320px;
+	height: 50vh;
+	background-image: url("../assets/img/bitcoinbaby2x.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.try-it-container__text{
+	margin: 0;
+	padding-top: 45px;
+	text-align: center;
+}
+
+.plans-container{
+	width: 100%;
+	min-width: 320px;
+	height: 537px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--background);
+}
+
+.plans-container .plans-container__text{
+	width: 100%;
+	min-height: 100px;
+	padding: 15px 10px 25px;
+	margin-bottom:;
+}
+
+.plans-container .plans-container__cards-container{
+	width: 100%;
+	height: 361px;
+	padding-bottom: 30px;
+}
+
+.plans-container .plans-container__card{
+	width: 70%;
+	min-width: 198px;
+	max-width: 300px;
+	min-height: 220px;
+	margin: 0 auto;
+	background-color: var(--just-white);
+	border-radius: 10px;
+	box-shadow: 8px 8px 25px -4px rgba(0,0,0,0.67);
+}
+
+.plans-container .plans-container__recommended{
+	position: relative;
+	width: 120px;
+	height: 34px;
+	top: -13px;
+	margin: 0 auto;
+	padding-top: 10px;
+	font: var(--font-inter), var(--font-sans);
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+	color: var(--just-white);
+	background-color: var(--bitcoin-orage);
+	border-radius: 8px;
+}
+
+.plans-container .plans-container__card-title{
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	color: var(--warm-black);
+}
+
+.plans-container .plans-container__card-price{
+	display: inline-block;
+	font: var(--font-inter), var(--font-sans);
+	font-weight: bold;
+	font-size: 5.2rem;
+	line-height: 6.293rem;
+	color: var(--warm-black);
+}
+
+.plans-container .plans-container__dollar-sign{
+	position: relative;
+	top: -33px;
+	left: 0px;
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+.plans-container .plans-container__card-info--small{
+	font-size: 1.2rem;
+}
+
+.plans-container .plans-container__card-button{
+	font-family: DM Sans;
+	width: 151px;
+	height: 48px;
+	font-weight: 700;
+	align-items: center;
+	margin: 15px 0;
+	justify-content: center;
+	text-align: center;
+	border: 2px solid orange;
+	border-radius: 4px;	
+	background: var(--off-white);
+}
+
+.plans-container .plans-container__card-button p{
+	position: relative;
+	top: -6px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.plans-container .plans-container__button-arrow{
+	display: inline-block;
+	position: relative;
+	top: 8px;
+	left: 9px;
+	width: 24px;
+	height: 24px;
+	background-image: url("../assets/icons/orange-right-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
